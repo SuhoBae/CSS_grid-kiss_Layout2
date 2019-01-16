@@ -1,0 +1,167 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  background-color: #e74c3c;
+  align-self: center;
+}
+.nav-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  align-self: center;
+}
+.logo {
+  padding: 20px;
+  font-weight: 900;
+  margin-right: 200px;
+}
+.menu {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+.menu > ul {
+  margin-right: 40px;
+}
+
+.articles {
+  margin: 30px;
+  width: 1200px;
+  display: grid;
+  grid-template:
+    "a b b"
+    "a b b"
+    "c d e"
+    "f d g"
+    "h h i"
+    "h h i"
+    "j j k"
+    "j j l"
+    "m m o"
+    "m m p"
+    "q q r"
+    "q q s" / 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, 400px);
+  grid-gap: 15px;
+}
+
+.articles > .box1 {
+  grid-area: a;
+  background-color: #3498db;
+}
+.articles > .box2 {
+  grid-area: b;
+  background-color: #2ecc71;
+}
+.articles > .box3 {
+  grid-area: c;
+  background-color: #9b59b6;
+}
+.articles > .box4 {
+  grid-area: d;
+  background-color: #4b1abc;
+}
+.articles > .box5 {
+  grid-area: e;
+  background-color: #bc1a7e;
+}
+.articles > .box6 {
+  grid-area: f;
+  background-color: #451abc;
+}
+.articles > .box7 {
+  grid-area: g;
+  background-color: #bc831a;
+}
+.articles > .box8 {
+  grid-area: h;
+  background-color: #bc1a1a;
+}
+.articles > .box9 {
+  grid-area: i;
+  background-color: #1abc9c;
+}
+.articles > .box10 {
+  grid-area: j;
+  background-color: #1abc9c;
+}
+.articles > .box11 {
+  grid-area: k;
+  background-color: #1abc9c;
+}
+.articles > .box12 {
+  grid-area: l;
+  background-color: #1abc9c;
+}
+.articles > .box13 {
+  grid-area: m;
+  background-color: #1abc9c;
+}
+.articles > .box14 {
+  grid-area: n;
+  background-color: #1abc9c;
+}
+.articles > .box15 {
+  grid-area: o;
+  background-color: #1abc9c;
+}
+.articles > .box16 {
+  grid-area: p;
+  background-color: #1abc9c;
+}
+.articles > .box17 {
+  grid-area: q;
+  background-color: #1abc9c;
+}
+.articles > .box18 {
+  grid-area: r;
+  background-color: #1abc9c;
+}
+.articles > .box19 {
+  grid-area: s;
+  background-color: #1abc9c;
+}
+/* color modification:
+    color:color-mod(red alpha(30%)) //< 30%는 opacity. 자세한것은 모드 property참고.
+
+    color mod 응용: 
+    h1{
+      color:red;
+    }
+    h1:hover{
+      color:color-mod(red alpha(30%))
+    }
+    color:gray(00%)
+
+    system-ui:
+    h1{
+      font-family:sytem-ui;
+    } 내 컴퓨터에 설치되어있는 폰트로 연결.
+
+
+    Nesting Rules:
+    main section {}에서 
+    main {
+      background-color:blue;
+      &section {
+        background-color:red;
+        width: 500px;
+        & li {
+          background-color:yellow;
+          width: 400px;
+          & :hover {
+            font-size:30px;
+          }
+        }
+      }     
+    }
+    이런식으로 반복을 줄일 수 있다.
+    CSS에서는 Selector가 자세할수록 더 우선순위를 가진다.
+    고로 아래와 같이 수정할 수 있다.
+
+    postcss-grid-kiss:
+*/

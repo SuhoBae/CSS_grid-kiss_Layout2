@@ -1,3 +1,47 @@
+body {
+  position: relative;
+}
+.back-to-top {
+  text-decoration: none;
+  font-family: "Thasadith", sans-serif;
+  display: inline;
+  text-align: right;
+  font-size: 1.5rem;
+  color: white;
+  position: fixed;
+  right: 0;
+  margin: 3rem;
+  padding: 0rem 0.2rem 0.1rem 1.2rem;
+  border-radius: 40px;
+  background-color: rgb(56, 56, 56);
+  bottom: 0;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.scrolled {
+  text-decoration: none;
+  font-family: "Thasadith", sans-serif;
+  display: inline;
+  text-align: right;
+  font-size: 1.5rem;
+  color: white;
+  position: fixed;
+  right: 0;
+  margin: 3rem;
+  padding: 0rem 0.2rem 0.1rem 1.2rem;
+  border-radius: 40px;
+  background-color: rgb(56, 56, 56);
+  bottom: 0;
+  z-index: 4;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.back-to-top > i {
+  font-size: 1.3rem;
+  padding: 10px;
+  color: white;
+}
 .container {
   display: grid;
   grid-template-columns: 100%;
@@ -83,7 +127,9 @@
   height: 80px;
   width: 400px;
   position: static;
-  border-top: 1px solid rgb(219, 219, 219);
+
+  outline: 1px solid rgb(219, 219, 219);
+  outline-offset: 0px;
 }
 .header_awardBox > .header_awardBox_item > i {
   font-size: 35px;
